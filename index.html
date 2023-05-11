@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <div class="container">
 
-  </body>
+    <body>
+      <header class="main-header">
+        <a class="logo-navigation">
+          <img src="./images/logo.svg" alt="Логотип магазина Глейтси." width="137" height="56">
+        </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a href="#" class="main-navigation-link">Каталог</a>
+              <div class="navigation-catalog">
+                <ul class="navigation-catalog-menu">
+                  <li class="navigation-catalog-item">
+                    <a href="#" class="navigation-catalog-link">Новинки</a>
+                  </li>
+                  <li class="navigation-catalog-item">
+                    <a href="#" class="navigation-catalog-link">Сливочное</a>
+                  </li>
+                  <li class="navigation-catalog-item">
+                    <a href="#" class="navigation-catalog-link">Щербеты</a>
+                  </li>
+                  <li class="navigation-catalog-item">
+                    <a href="#" class="navigation-catalog-link">Фруктовый лед</a>
+                  </li>
+                  <li class="navigation-catalog-item">
+                    <a href="#" class="navigation-catalog-link">Мелорин</a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#" class="main-navigation-link">Доставка и оплата</a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#" class="main-navigation-link">О компании</a>
+            </li>
+          </ul>
+          <div class="other-navigation">
+            <a href="tel:+78005558628" class="header-link-phone">
+              <span class="header-phone-text">+7 800 555-86-28</span>
+            </a>
+            <div class="header-search">
+              <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
+                <label class="visually-hidden" for="search">Введите текст для поиска</label>
+                <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
+                  required>
+              </form>
+            </div>
+            <ul class="user-navigation">
+              <li class="user-navigation-item">
+                <a href="#" class="user-navigation-link">Вход</a>
+              </li>
+              <li class="user-navigation-item">
+                <span class="visually-hidden">Корзина</span>
+                <a href="#" class="user-navigation-cart">
+                  <span class="user-navigation-text">В корзине 2</span>
+                </a>
+                <div class="popover-cart">
+                  <!-- содержимое корзины -->
+                </div>
+              </li>
+            </ul>
+
+
+          </div>
+
+        </nav>
+      </header>
+
+    </body>
+  </div>
+
 </html>

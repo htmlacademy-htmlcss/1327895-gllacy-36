@@ -59,14 +59,70 @@
             <ul class="user-navigation">
               <li class="user-navigation-item">
                 <a href="#" class="user-navigation-link">Вход</a>
+                <div class="personal-account">
+                  <p class="personal-account-title">Личный кабинет</p>
+                  <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
+                    <div class="personal-account-label">
+                      <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
+                      <input type="email" name="e-mail" id="mail" value="email@example.com" required>
+                    </div>
+                    <div class="personal-account-label">
+                      <label for="password" class="visually-hidden">Введите ваш пароль</label>
+                      <input type="password" name="password" id="password" value="example" required>
+                    </div>
+                    <button class="personal-account-button" type="submit">
+                      <span class="button-text">Войти</span>
+                    </button>
+                    <ul class="personal-account-links">
+                      <li class="personal-account-item">
+                        <a href="#" class="password-link">Забыли пароль?</a>
+                      </li>
+                      <li class="personal-account-item">
+                        <a href="#" class="registration-link">Регистрация</a>
+                      </li>
+                    </ul>
+                  </form>
+
+                </div>
               </li>
               <li class="user-navigation-item">
                 <span class="visually-hidden">Корзина</span>
                 <a href="#" class="user-navigation-cart">
-                  <span class="user-navigation-text">В корзине 2</span>
+                  <span class="user-navigation-text">2 товара</span>
                 </a>
                 <div class="popover-cart">
-                  <!-- содержимое корзины -->
+                  <div class="popover-cart-wrapper">
+                    <ul class="cart-list-products">
+                      <li class="cart-item-product">
+                        <span class="cart-image-wrapper">
+                          <img src="./images/products/basket-product-1.png" alt="Мороженное розового цвета"
+                            class="cart-image" width="46" height="46">
+                        </span>
+                        <div class="product-wrapper">
+                          <span class="cart-product-name">Малинка</span>
+                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                        </div>
+                        <b class="cart-product-price">310 ₽</b>
+                        <button class="cart-product-delete" type="button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item-product">
+                        <span class="cart-image-wrapper">
+                          <img src="./images/products/basket-product-2.png" alt="Мороженное бирюзового цвета"
+                            class="cart-image" width="46" height="46">
+                        </span>
+                        <div class="product-wrapper">
+                          <span class="cart-product-name">Малинка</span>
+                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                        </div>
+                        <b class="cart-product-price">310 ₽</b>
+                        <button class="cart-product-delete" type="button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -76,6 +132,38 @@
 
         </nav>
       </header>
+      <main class="main-index">
+        <h1 class="visually-hidden">Главная страница магазина Глейтси</h1>
+        <section class="main-hero">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <div class="slider">
+            <div class="slider-window">
+              <ul class="slider-list">
+                <li class="slider-item slider-item-current">
+                  <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
+                  <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом
+                    – это идеальный десерт для всей семьи.</p>
+                  <img src="./images/strawberry.png" alt="Клубничное мороженное." class="slider-image" width="327"
+                    height="507">
+                  <button class="slider-button" type="button">Заказать</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="slider-paganation">
+              <li class="slider-paganation-button">
+                <span class="visually-hidden">Показать первый слайдер</span>
+              </li>
+              <li class="slider-paganation-button">
+                <span class="visually-hidden">Показать второй слайдер</span>
+              </li>
+              <li class="slider-paganation-button">
+                <span class="visually-hidden">Показать третий слайдер</span>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+      </main>
 
     </body>
   </div>

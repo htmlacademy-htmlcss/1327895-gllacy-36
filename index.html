@@ -11,7 +11,7 @@
     <body>
       <header class="main-header">
         <a class="logo-navigation">
-          <img src="./images/logo.svg" alt="Логотип магазина Глейтси." width="137" height="56">
+          <img src="./images/logo.svg" alt="Логотип магазина Глейси." width="137" height="56">
         </a>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
@@ -95,7 +95,7 @@
                     <ul class="cart-list-products">
                       <li class="cart-item-product">
                         <span class="cart-image-wrapper">
-                          <img src="./images/products/basket-product-1.png" alt="Мороженное розового цвета"
+                          <img src="./images/products/basket-product-1.png" alt="Мороженное с малиновым джемом."
                             class="cart-image" width="46" height="46">
                         </span>
                         <div class="product-wrapper">
@@ -109,11 +109,11 @@
                       </li>
                       <li class="cart-item-product">
                         <span class="cart-image-wrapper">
-                          <img src="./images/products/basket-product-2.png" alt="Мороженное бирюзового цвета"
+                          <img src="./images/products/basket-product-2.png" alt="Ванильный пломбир со сладкой посыпкой."
                             class="cart-image" width="46" height="46">
                         </span>
                         <div class="product-wrapper">
-                          <span class="cart-product-name">Малинка</span>
+                          <span class="cart-product-name">Бабл-гам</span>
                           <span class="cart-chosen-price">1 кг х 310 ₽</span>
                         </div>
                         <b class="cart-product-price">310 ₽</b>
@@ -133,7 +133,7 @@
         </nav>
       </header>
       <main class="main-index">
-        <h1 class="visually-hidden">Главная страница магазина Глейтси</h1>
+        <h1 class="visually-hidden">Главная страница магазина Глейси</h1>
         <section class="main-hero">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="slider">
@@ -151,7 +151,7 @@
                   <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
                   <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
                     даже в самый жаркий летний день. </p>
-                  <img src="./images/slider-2.png" alt="Мороженное со вкусом бананаю" class="slider-image" width="327"
+                  <img src="./images/slider-2.png" alt="Мороженное со вкусом банана." class="slider-image" width="327"
                     height="507">
                   <button class="slider-button" type="button">Заказать</button>
                 </li>
@@ -290,7 +290,7 @@
           </ul>
         </section>
         <section class="about">
-          <h2 class="visually-hidden">О магазине "Глейтси"</h2>
+          <h2 class="visually-hidden">О магазине "Глейси"</h2>
           <p class="about-heading">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
             производства на развес</p>
           <ul class="about-list">
@@ -321,6 +321,37 @@
             </form>
           </section>
         </div>
+        <section class="delivery">
+          <h2 class="visually-hidden">Доставка</h2>
+          <div class="delivery-text-block">
+            <p class="delivery-heading">Доставка любимого мороженного на дом</p>
+            <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+              доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <form action="https://echo.htmlacademy.ru/" class="delivery-form">
+            <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <div class="delivery-form-block">
+              <p class="delyvery-group">
+                <label for="delivery-date" class="delivery-label">Дата</label>
+                <input type="datetime" class="delyvery-input delyvery-input-date" id="delivery-date"
+                  placeholder="01.04.2020" required>
+              </p>
+              <p class="delivery-group">
+                <label for="delivery-phone" class="delyvery-phone">Телефон</label>
+                <input id="delivery-phone" type="tel" class="delivery-input delivery-input-phone"
+                  placeholder="+7 800 999-00-00" required>
+              </p>
+            </div>
+
+
+            <p class="delivery-group">
+              <label for="delivery-address" class="delyvery-address">Адрес</label>
+              <input id="delivery-address" type="text" class="delivery-input delivery-input-phone"
+                placeholder="ул. Большая Конюшенная, 19/8" required>
+            </p>
+            <button class="delivery-button" type="submit">Отправить</button>
+          </form>
+        </section>
       </main>
 
     </body>

@@ -143,31 +143,40 @@
         <section class="catalog-filter">
           <h2 class="catalog-filter-heading">Сливочное мороженное</h2>
           <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
-            <div class="sorting-group">
-              <h3 class="catalog-sorting-title">Сортировка:</h3>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Сортировка:</legend>
               <select class="catalog-select" name="sorting">
                 <option class="product-classification" value="popular" selected>Популярные</option>
                 <option class="product-classification" value="inexpensive">Дорогие</option>
                 <option class="product-classification" value=" feedback">Дешевые</option>
               </select>
-            </div>
-            <fieldset class="filter-group">
-              <legend class="filter-title">Цена:</legend>
-              <div class="filter-wrapper">
-                <label for="filter-price" class="visually-hidden">от</label>
-                <input id="filter-price" class="filter-control" name="min-price" placeholder="" value="100"
-                  type="number">
-                <span class="filter-control-text">₽</span>
-
-
-                <label for="filter-price" class="visually-hidden">до</label>
-                <input id="filter-price" class="filter-control" name="min-price" placeholder="" value="100"
-                  type="number">
-                <span class="filter-control-text">₽</span>
-
-              </div>
             </fieldset>
+            <fieldset class="filter-group">
+              <label for="filter-price" class="visually-hidden">Цена:</label>
+              <span class="visually-hidden">от</span>
+              <input id="filter-price" class="filter-control" name="min-price" placeholder="" value="100" type="number">
+              <span class="filter-control-text">₽</span>
 
+
+              <label for="filter-price">
+                <span class="visually-hidden">до</span>
+              </label>-
+              <input id="filter-price" class="filter-control" name="min-price" placeholder="" value="500" type="number">
+              <span class="filter-control-text">₽</span>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 164px;">
+                    <button class="range-button range-button-min" type="button">
+                      <span class="visually-hidden">Начальная цена</span>
+                    </button>
+                    <button class="range-button range-button-max" type="button">
+                      <span class="visually-hidden">Конечная цена</span>
+                    </button>
+                  </div>
+
+                </div>
+
+            </fieldset>
 
           </form>
         </section>

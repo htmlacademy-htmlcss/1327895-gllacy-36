@@ -10,7 +10,7 @@
   </head>
 
 
-  <body>
+  <body class="body-pink">
     <div class="container">
       <header class="main-header">
         <a class="logo-navigation">
@@ -52,15 +52,17 @@
               <span class="header-phone-text">+7 800 555-86-28</span>
             </a>
             <div class="header-search">
-              <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
-                <label class="visually-hidden" for="search">Введите текст для поиска</label>
-                <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
-                  required>
-              </form>
+              <div class="header-search-wrapper">
+                <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
+                  <label class="visually-hidden" for="search">Введите текст для поиска</label>
+                  <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
+                    required>
+                </form>
+              </div>
             </div>
             <ul class="user-navigation">
               <li class="user-navigation-item">
-                <a href="#" class="user-navigation-link">Вход</a>
+                <a href="#" class="user-navigation-link entry-link">Вход</a>
                 <div class="personal-account">
                   <p class="personal-account-title">Личный кабинет</p>
                   <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
@@ -87,8 +89,8 @@
                 </div>
               </li>
               <li class="user-navigation-item">
-                <span class="visually-hidden">Корзина</span>
-                <a href="#" class="user-navigation-cart">
+                <a href="#" class="user-navigation-link cart-link">
+                  <span class="visually-hidden">Корзина</span>
                   <span class="user-navigation-text">2 товара</span>
                 </a>
                 <div class="popover-cart">

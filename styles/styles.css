@@ -89,7 +89,28 @@ body {
 }
 
 .navigation-catalog {
-  display: none;
+  position: relative;
+}
+
+.navigation-catalog-menu {
+  position: absolute;
+  margin: 0;
+  padding: 16px;
+  min-width: 138px;
+  box-sizing: border-box;
+  list-style: none;
+  background-color: #fcfcfc;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.navigation-catalog-link {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .main-navigation-link {
@@ -135,7 +156,7 @@ body {
   position: relative;
 }
 
-.header-search::after {
+.header-search-link::after {
   content:"";
   position: absolute;
   background-color: rgba(252, 252, 252, 0.3);
@@ -148,11 +169,12 @@ body {
   background-position: center;
 }
 
-.header-search:hover::after {
+.header-search-link:hover::after {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.header-search-wrapper:focus-within {
+.header-search-link:focus::after {
+  outline: none;
   border: 2px solid #2d3440;
 }
 

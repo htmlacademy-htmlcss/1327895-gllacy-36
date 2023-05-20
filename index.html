@@ -69,7 +69,7 @@
                   <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
                     required>
                   <button class="navigation-search-reset" type="reset">
-                    <span class="visually-hidden">Сброс поска</span>
+                    <span class="visually-hidden">Сброс поиска</span>
                   </button>
                 </div>
               </form>
@@ -105,41 +105,51 @@
               </li>
               <li class="user-navigation-item">
                 <a href="#" class="user-navigation-link cart-link">
-                  <span class="visually-hidden">Корзина</span>
                   <span class="user-navigation-text">2 товара</span>
                 </a>
-                <div class="popover-cart">
-                  <div class="popover-cart-wrapper">
-                    <ul class="cart-list-products">
-                      <li class="cart-item-product">
-                        <span class="cart-image-wrapper">
-                          <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
-                            class="cart-image" width="46" height="46">
-                        </span>
-                        <div class="product-wrapper">
-                          <span class="cart-product-name">Малинка</span>
-                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
-                        </div>
-                        <b class="cart-product-price">310 ₽</b>
-                        <button class="cart-product-delete" type="button">
-                          <span class="visually-hidden">Удалить из корзины</span>
-                        </button>
-                      </li>
-                      <li class="cart-item-product">
-                        <span class="cart-image-wrapper">
-                          <img src="./images/products/product-cart-2.jpg" alt="Ванильный пломбир со сладкой посыпкой."
-                            class="cart-image" width="46" height="46">
-                        </span>
-                        <div class="product-wrapper">
-                          <span class="cart-product-name">Бабл-гам</span>
-                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
-                        </div>
-                        <b class="cart-product-price">310 ₽</b>
-                        <button class="cart-product-delete" type="button">
-                          <span class="visually-hidden">Удалить из корзины</span>
-                        </button>
-                      </li>
-                    </ul>
+                <div class="popover-cart-wrapper">
+                  <div class="popover-cart">
+                    <h2 class="popover-cart-title">Корзина</h2>
+                    <form action="https://echo.htmlacademy.ru/" class="popover-cart-form">
+                      <ul class="cart-list-products">
+                        <li class="cart-item-product">
+                          <div class="cart-image-wrapper">
+                            <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
+                              class="cart-image" width="46" height="46">
+                          </div>
+                          <div class="product-wrapper">
+                            <span class="cart-product-name">Малинка</span>
+                            <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                          </div>
+                          <b class="cart-product-price">310 ₽</b>
+                          <button class="cart-product-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                          <input type="hidden" name="cart-item" value="Малинка">
+                        </li>
+                        <li class="cart-item-product">
+                          <div class="cart-image-wrapper">
+                            <img src="./images/products/product-cart-2.jpg" alt="Ванильный пломбир со сладкой посыпкой."
+                              class="cart-image" width="46" height="46">
+                          </div>
+                          <div class="product-wrapper">
+                            <span class="cart-product-name">Бабл-гам</span>
+                            <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                          </div>
+                          <b class="cart-product-price">310 ₽</b>
+                          <button class="cart-product-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                          <input type="hidden" name="cart-item" value="Бабл-гам">
+                        </li>
+                      </ul>
+                      <div class="cart-order">
+                        <button class="cart-order-submit" type="submit">Оформить заказ</button>
+                        <span class="cart-order-sum">Итого:</span>
+                        <span class="cart-order-price">790 ₽</span>
+
+                      </div>
+                    </form>
                   </div>
                 </div>
               </li>

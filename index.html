@@ -18,11 +18,11 @@
         </a>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li class="main-navigation-item">
-              <a href="./catalog.html" class="main-navigation-link">Каталог</a>
-              <div class="navigation-catalog">
+            <li class="main-navigation-item popover-block">
+              <a href="./catalog.html" class="main-navigation-link dropdown-link  popover-link">Каталог</a>
+              <div class="navigation-catalog popover-window">
                 <ul class="navigation-catalog-menu">
-                  <li class="navigation-catalog-item">
+                  <li class="navigation-catalog-item new-item">
                     <a href="#" class="navigation-catalog-link new-link">Новинки</a>
                   </li>
                   <li class="navigation-catalog-item">
@@ -48,11 +48,13 @@
             </li>
           </ul>
           <div class="other-navigation">
-            <a href="tel:+78005558628" class="header-link-phone">
-              <span class="header-phone-text">+7 800 555-86-28</span>
-            </a>
-            <div class="header-search">
-              <a href="#" class="header-search-link">
+            <div class="header-phone-block">
+              <a href="tel:+78005558628" class="header-link-phone">
+                <span class="header-phone-text">+7 800 555-86-28</span>
+              </a>
+            </div>
+            <div class="header-search popover-block">
+              <a href="#" class="header-search-link popover-link">
                 <span class="visually-hidden">Поиск</span>
                 <span class="header-search-image">
                   <svg class="header-search-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -63,7 +65,7 @@
                   </svg>
                 </span>
               </a>
-              <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
+              <form action="https://echo.htmlacademy.ru/" class="navigation-form popover-window" method="get">
                 <div class="header-search-wrapper">
                   <label class="visually-hidden" for="search">Введите текст для поиска</label>
                   <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
@@ -103,11 +105,11 @@
                   </form>
                 </div>
               </li>
-              <li class="user-navigation-item">
-                <a href="#" class="user-navigation-link cart-link">
+              <li class="user-navigation-item popover-block">
+                <a href="#" class="user-navigation-link cart-link popover-link">
                   <span class="user-navigation-text">2 товара</span>
                 </a>
-                <div class="popover-cart-wrapper">
+                <div class="popover-cart-wrapper popover-window">
                   <div class="popover-cart">
                     <h2 class="popover-cart-title">Корзина</h2>
                     <form action="https://echo.htmlacademy.ru/" class="popover-cart-form">
@@ -165,37 +167,55 @@
             <div class="slider-window">
               <ul class="slider-list">
                 <li class="slider-item slider-item-current">
-                  <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
-                  <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом
-                    – это идеальный десерт для всей семьи.</p>
-                  <img src="./images/slider-1.png" alt="Клубничное мороженное." class="slider-image" width="327"
-                    height="507">
-                  <button class="slider-button" type="button">Заказать</button>
+                  <div class="slider-text-block">
+                    <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
+                    <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
+                      джемом
+                      – это идеальный десерт для всей семьи.</p>
+                    <a href="#" class="slider-button">Заказать</a>
+                  </div>
+                  <div class="slider-img-block">
+                    <img src="./images/slider-1.png" alt="Клубничное мороженное." class="slider-image" width="327"
+                      height="507">
+                  </div>
                 </li>
-                <li class="slider-item slider-item-current">
-                  <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
-                  <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
-                    даже в самый жаркий летний день. </p>
-                  <img src="./images/slider-2.png" alt="Мороженное со вкусом банана." class="slider-image" width="327"
-                    height="507">
-                  <button class="slider-button" type="button">Заказать</button>
+                <li class="slider-item ">
+                  <div class="slider-text-block">
+                    <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
+                    <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                      наслаждение
+                      даже в самый жаркий летний день. </p>
+
+                    <a href="#" class="slider-button">Заказать</a>
+                  </div>
+                  <div class="slider-img-block">
+                    <img src="./images/slider-2.png" alt="Мороженное со вкусом банана." class="slider-image" width="327"
+                      height="507">
+                  </div>
+
                 </li>
-                <li class="slider-item slider-item-current">
-                  <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
-                  <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
-                    сердца сладкоежек всех возрастов.</p>
-                  <img src="./images/slider-3.png" alt="Карамельный пломбир." class="slider-image" width="327"
-                    height="507">
-                  <button class="slider-button" type="button">Заказать</button>
+                <li class="slider-item ">
+                  <div class="slider-text-block">
+                    <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
+                    <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+                      сердца сладкоежек всех возрастов.</p>
+
+                    <a href="#" class="slider-button">Заказать</a>
+                  </div>
+                  <div class="slider-img-block">
+                    <img src="./images/slider-3.png" alt="Карамельный пломбир." class="slider-image" width="327"
+                      height="507">
+                  </div>
                 </li>
               </ul>
+              <button class="slider-button slider-button-prev" type="button">
+                <span class="visually-hidden">Показать предыдущий слайдер</span>
+              </button>
+              <button class="slider-button slider-button-prev" type="button">
+                <span class="visually-hidden">Показать предыдущий слайдер</span>
+              </button>
             </div>
-            <button class="slider-button slider-button-prev" type="button">
-              <span class="visually-hidden">Показать предыдущий слайдер</span>
-            </button>
-            <button class="slider-button slider-button-prev" type="button">
-              <span class="visually-hidden">Показать предыдущий слайдер</span>
-            </button>
+
             <div class="slider-bottom">
               <ul class="slider-paganation">
                 <li class="slider-paganation-item">

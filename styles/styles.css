@@ -70,14 +70,17 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  padding-bottom: 24px;
 }
 
 .logo-navigation {
+  margin-top: 24px;
   margin-right: 16px;
 }
 
 .main-navigation {
   display: flex;
+  width: 100%;
 }
 
 .main-navigation-list {
@@ -87,17 +90,24 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 23px;
 }
 
 .navigation-catalog {
   position: relative;
+  box-sizing: border-box;
 }
 
 .navigation-catalog-menu {
   position: absolute;
+  top: 0;
+  left: 1px;
   margin: 0;
   padding: 0;
-  min-width: 138px;
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  min-width: 136px;
   box-sizing: border-box;
   list-style: none;
   background-color: #fcfcfc;
@@ -105,37 +115,10 @@ body {
   border-radius: 4px;
 }
 
-.navigation-catalog-link {
-  display: inline-block;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color:#2d3440;
-}
-
-.new-link {
-  position: relative;
-  font-weight: 700;
-  padding-bottom: 18px;
-}
-
-.new-link::after {
-  position: absolute;
-  content: "";
-  background-color: #b9b9b9;
-  height: 2px;
-  width: 100%;
-  bottom: 2px;
-  left: 18px;
-}
 
 .main-navigation-link {
   display: block;
-  padding: 8px 16px;
+  padding: 7px 14px;
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 30px;
@@ -147,9 +130,24 @@ body {
   line-height: 20px;
 }
 
+.dropdown-link {
+  padding-right: 38px;
+  position: relative;
+}
+
+.dropdown-link::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/down.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 6px;
+  top: 14px;
+  right: 16px;
+}
+
 .main-navigation-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
-
 }
 
 .main-navigation-link:active {
@@ -162,11 +160,66 @@ body {
   border-color: #2d3440;
 }
 
+.navigation-catalog-link {
+  display: inline-block;
+  padding: 6px 10px 6px 17px;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color:#2d3440;
+}
+
+.new-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.new-item::after {
+  content: "";
+  position: absolute;
+  background-color: #b9b9b9;
+  width: calc(100% - 32px);
+  left: 16px;
+  height: 2px;
+  top: 36px;
+}
+
+.new-link {
+  font-weight: 700;
+}
+
 .other-navigation {
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 16px;
+  margin-top: 20px;
+}
+
+.header-phone-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 200px;
+}
+
+.header-link-phone {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 700;
+  color:#2d3440;
+  outline: none;
+}
+
+.header-link-phone:hover,
+.header-link-phone:focus {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .header-search {
@@ -178,8 +231,8 @@ body {
   border: 0;
   box-sizing: border-box;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,19 +255,19 @@ body {
 
 .navigation-form {
   position: absolute;
-  min-width: 356px;
+  min-width: 357px;
   border-radius: 4px;
   padding: 24px 16px;
   box-sizing: border-box;
   background-color: #fcfcfc;
-  top: 0;
+  top: 40px;
   right: 0;
 }
 
 .navigation-search {
   display: inline-block;
-  min-width: 324px;
-  padding: 10px 19px;
+  min-width: 285px;
+  padding: 14px 22px 12px 16px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -249,34 +302,33 @@ body {
 
 }
 
-
-.header-link-phone {
-  display: block;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-weight: 700;
-  color:#2d3440;
-}
-
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 218px;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: auto;
   gap: 16px;
 }
 
 .user-navigation-link {
   position: relative;
   display: block;
-  text-decoration: none;
-  color:#2d3440;
-  padding: 8px 16px 8px 38px;
-  border-radius: 30px;
-  border: 2px solid transparent;
   box-sizing: border-box;
+  padding: 5px 14px 4px 37px;
+  text-decoration: none;
   background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #2d3440;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .entry-link::before {
@@ -286,8 +338,8 @@ body {
   position: absolute;
   background-image: url(../images/entry.svg);
   background-repeat: no-repeat;
-  top: 10px;
-  left: 16px;
+  top: 7px;
+  left: 14px;
 }
 
 .cart-link::before {
@@ -297,8 +349,8 @@ body {
   position: absolute;
   background-image: url(../images/cart-icon.svg);
   background-repeat: no-repeat;
-  top: 10px;
-  left: 16px;
+  top: 7px;
+  left: 14px;
 }
 
 .user-navigation-link:hover {
@@ -365,4 +417,73 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
+}
+
+/*----------------------------------*/
+
+.popover-window {
+  display: none;
+}
+
+.popover-block:hover .popover-window {
+  display: block;
+}
+
+.popover-block:focus-within .popover-window {
+  display: block;
+}
+
+
+
+
+/*-------------------------------------*/
+.slider-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  margin-top: 27px
+}
+
+.slider-item {
+  margin-top: 150px;
+  opacity: 0.5;
+}
+
+.slider-img-block {
+  width: 100px;
+  height: 150px;
+}
+
+.slider-image {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.slider-text-block {
+  display: none;
+}
+
+.slider-item-current {
+  margin-top: 0;
+  opacity: 1;
+  display: flex;
+  width: 908px;
+}
+
+.slider-item-current .slider-text-block {
+  padding-top: 92px;
+  width: 523px;
+  padding-left: 72px;
+  box-sizing: border-box;
+  padding-right: 10px;
+  display: block;
+}
+
+.slider-item-current .slider-img-block {
+  width: 367px;
+  height: 554px;
 }

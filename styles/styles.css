@@ -417,7 +417,7 @@ body {
 .cart-item-product {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
 }
 
 .cart-image-wrapper {
@@ -432,8 +432,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 170px ;
-  margin-right: 83px;
+  width: 250px;
+  margin-right: 25px;
 }
 
 .cart-product-name {
@@ -452,6 +452,10 @@ body {
 
 .cart-product-price {
   margin-right: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  width: 120px;
 }
 
 .cart-product-delete {

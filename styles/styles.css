@@ -395,8 +395,92 @@ body {
   border-color:#2d3440;
 }
 
+.personal-account-wrapper {
+  position: absolute;
+  right: 0;
+  padding-top: 5px ;
+  z-index: 1;
+}
+
 .personal-account {
-  display: none;
+ width: 420px;
+ padding: 50px 48px;
+ box-sizing: border-box;
+ background-color: #fcfcfc;
+ border-radius: 4px;
+}
+
+.personal-account-title,
+.popover-cart-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.personal-account-input {
+  width: 323px;
+  height: 47px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.personal-account-password {
+  font-size: 13px;
+}
+
+.personal-account-label + .personal-account-label {
+  margin-top: 17px;
+  margin-bottom: 27px;
+}
+
+.personal-account-entry {
+  display: flex;
+  align-items: center
+}
+
+.personal-account-button {
+  padding: 13px 30px;
+  background-color:#ff2f64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  color:#fcfcfc;
+  margin-right: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.personal-account-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.password-link,
+.registration-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.password-link {
+  margin-bottom: 5px;
 }
 
 .user-navigation-item {
@@ -412,22 +496,12 @@ body {
 }
 
 .popover-cart {
-
   width: 440px;
   padding: 49px 48px;
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #fcfcfc;
   z-index: 1;
-}
-
-.popover-cart-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .cart-list-products {
@@ -508,6 +582,7 @@ body {
   background-color: #ff2f64;
   border: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
+  color: #fcfcfc;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;

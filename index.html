@@ -96,31 +96,37 @@
             </div>
 
             <ul class="user-navigation">
-              <li class="user-navigation-item">
-                <a href="#" class="user-navigation-link entry-link">Вход</a>
-                <div class="personal-account">
-                  <p class="personal-account-title">Личный кабинет</p>
-                  <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
-                    <div class="personal-account-label">
-                      <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
-                      <input type="email" name="e-mail" id="mail" value="email@example.com" required>
-                    </div>
-                    <div class="personal-account-label">
-                      <label for="password" class="visually-hidden">Введите ваш пароль</label>
-                      <input type="password" name="password" id="password" value="example" required>
-                    </div>
-                    <button class="personal-account-button" type="submit">
-                      <span class="button-text">Войти</span>
-                    </button>
-                    <ul class="personal-account-links">
-                      <li class="personal-account-item">
-                        <a href="#" class="password-link">Забыли пароль?</a>
-                      </li>
-                      <li class="personal-account-item">
-                        <a href="#" class="registration-link">Регистрация</a>
-                      </li>
-                    </ul>
-                  </form>
+              <li class="user-navigation-item popover-block">
+                <a href="#" class="user-navigation-link popover-link entry-link">Вход</a>
+                <div class="personal-account-wrapper popover-window">
+                  <div class="personal-account">
+                    <p class="personal-account-title">Личный кабинет</p>
+                    <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
+                      <div class="personal-account-label">
+                        <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
+                        <input class="personal-account-input" type="email" name="e-mail" id="mail"
+                          value="email@example.com" required>
+                      </div>
+                      <div class="personal-account-label">
+                        <label for="password" class="visually-hidden">Введите ваш пароль</label>
+                        <input class="personal-account-input personal-account-password" type="password" name="password"
+                          id="password" value="exampl" required>
+                      </div>
+                      <div class="personal-account-entry">
+                        <button class="personal-account-button" type="submit">
+                          <span class="button-text">Войти</span>
+                        </button>
+                        <ul class="personal-account-links">
+                          <li class="personal-account-item">
+                            <a href="#" class="password-link">Забыли пароль?</a>
+                          </li>
+                          <li class="personal-account-item">
+                            <a href="#" class="registration-link">Регистрация</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </li>
               <li class="user-navigation-item popover-block">

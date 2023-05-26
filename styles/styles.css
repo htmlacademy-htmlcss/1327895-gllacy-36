@@ -289,7 +289,6 @@ body {
   right: 0;
 }
 
-
 .navigation-form {
   min-width: 357px;
   border-radius: 4px;
@@ -621,6 +620,13 @@ body {
 }
 
 /*Блок Hero  */
+.main-hero {
+  margin-bottom: 60px;
+}
+
+.slider {
+  position: relative;
+}
 
 .slider-window {
   position: relative;
@@ -759,21 +765,21 @@ body {
   left: 45%;
 }
 
-.slider-bottom-block {
-  display: flex;
-  justify-content: space-between;
-}
-
 .slider-paganation {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   column-gap: 8px;
 }
 
 .slider-paganation-button {
+  display: block;
  border: none;
  width: 12px;
  height: 12px;
@@ -786,24 +792,197 @@ body {
 }
 
 .slider-socials {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 15px;
 }
 
 .slider-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  background-color:black;
+  border: 2px solid #fdc6d4;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.slider-social-icon {
+.slider-social-link:hover {
+  background-color: #2d3440;
+  border: 2px solid #fcd5df;
+}
 
+.slider-social-link:active {
+  opacity: 0.5;
+}
+
+.slider-social-link:focus {
+  background-color: #2d3440;
+  border: 2px solid  #2d3440;;
+}
+
+.stocks {
+  margin-bottom: 81px ;
+}
+
+.heading-block {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stocks-heading {
+  width: 434px;
+  padding: 0;
+  margin-bottom: 54px;
+}
+
+.stocks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.stocks-item {
+  width: 570px;
+  padding: 36px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+  background-color: #ff7799;
+  border-radius: 16px;
+}
+
+.stocks-raspberry {
+  background-image: url("../images/rasberry-banner.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+}
+
+.stocks-marshmallow {
+  background-image: url("../images/marshmallow-banner.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+
+}
+
+.stocks-text-blok {
+  width: 304px;
+}
+
+.stocks-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.stocks-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.stocks-button {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 12px 33px;
+  box-sizing: border-box;
+  color:  #2d3440;
+  background-color: #fcfcfc;
+  border-radius: 26px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.popular-products-heading {
+  display: block;
+  width: 530px;
+  margin-bottom: 56px;
+}
+
+.popular-products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  width: 270px;
+  padding: 0 40px 24px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+.product-item-link {
+  text-decoration: none;
+}
+
+.product-item-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+}
+
+.product-item-title {
+  margin: 0;
+  padding: 0;
+  color:#2d3440;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.product-item-text {
+  margin-bottom: 16px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-item-favorite {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ff2f64;
+  border: none;
 }

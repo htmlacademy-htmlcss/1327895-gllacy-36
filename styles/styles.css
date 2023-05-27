@@ -875,7 +875,6 @@ body {
   background-image: url("../images/marshmallow-banner.png");
   background-repeat: no-repeat;
   background-position: top 0 right 0;
-
 }
 
 .stocks-text-blok {
@@ -979,10 +978,25 @@ body {
 }
 
 .product-item-favorite {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #ff2f64;
-  border: none;
+  border: 2px solid #ff2f64;
+  box-sizing: border-box;
+}
+
+.product-cart-icon {
+  fill: #fcfcfc;
+}
+
+.product-item-favorite:hover {
+  background-color: #fcfcfc;
+}
+
+.product-item-favorite:hover .product-cart-icon {
+  fill: #000000;
 }

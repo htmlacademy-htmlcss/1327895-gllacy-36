@@ -439,27 +439,28 @@
         <section class="delivery">
           <h2 class="visually-hidden">Доставка</h2>
           <div class="delivery-text-block">
-            <p class="delivery-heading heading-block">Доставка любимого мороженного на дом</p>
-            <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+            <p class="delivery-heading heading-block">Доставка любимого мороженого на дом</p>
+            <p class="delivery-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин?
+              Закажите
               доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <form action="https://echo.htmlacademy.ru/" class="delivery-form">
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <div class="delivery-form-block">
-              <p class="delyvery-group">
+              <p class="delivery-group">
                 <label for="delivery-date" class="delivery-label">Дата</label>
-                <input type="text" class="delyvery-input delyvery-input-date" id="delivery-date"
+                <input type="text" class="delivery-input delivery-input-date" id="delivery-date"
                   placeholder="01.04.2020" required>
               </p>
               <p class="delivery-group">
-                <label for="delivery-phone" class="delyvery-phone">Телефон</label>
+                <label for="delivery-phone" class="delivery-label">Телефон</label>
                 <input id="delivery-phone" type="text" class="delivery-input delivery-input-phone"
                   placeholder="+7 800 999-00-00" required>
               </p>
             </div>
-            <p class="delivery-group">
-              <label for="delivery-address" class="delyvery-address">Адрес</label>
-              <input id="delivery-address" type="text" class="delivery-input delivery-input-phone"
+            <p class="delivery-group delivery-address-group">
+              <label for="delivery-address" class="delivery-label">Адрес</label>
+              <input id="delivery-address" type="text" class="delivery-input delivery-input-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="delivery-button" type="submit">Отправить</button>

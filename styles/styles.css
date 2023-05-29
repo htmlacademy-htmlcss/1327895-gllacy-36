@@ -1103,7 +1103,6 @@ body {
   padding-left: 66px;
   box-sizing: border-box;
   line-height: 22px;
-
 }
 
 .about-item:nth-child(1) {
@@ -1135,6 +1134,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: flex-start;
+  margin-bottom: 80px;
 }
 
 .new,
@@ -1182,7 +1182,6 @@ body {
 }
 
 .mailing {
-
   padding: 6px;
   background-image: url("../images/subscription-background.jpg");
   background-position: right top;
@@ -1201,12 +1200,13 @@ body {
 .mailing-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
+  line-height: 22px;
 }
 
 .mailing-form {
   display: flex;
-  gap: 14px;
+  gap: 16px;
 }
 
 .mailing-input {
@@ -1222,4 +1222,26 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+}
+
+.mailing-button {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fcfcfc;
+}
+
+.delivery {
+  background-color: #ffffff;
+  border-radius: 16px;
+  background-image: url("../images/delivery-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }

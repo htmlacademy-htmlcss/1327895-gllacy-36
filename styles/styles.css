@@ -316,7 +316,9 @@ body {
 .navigation-search:hover,
 .personal-account-input:hover,
 .navigation-search:focus,
-.personal-account-input:focus {
+.personal-account-input:focus,
+.mailing-input:hover,
+.mailing-input:focus {
   border-color: #2d3440;
 }
 
@@ -1139,10 +1141,10 @@ body {
 .mailing {
   width: 570px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .new {
-  border-radius: 16px;
   padding: 33px 32px 67px 32px;
   background-color: #ffffff;
   background-image: url("../images/news-background.jpg");
@@ -1177,4 +1179,47 @@ body {
 .new-link-article:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+
+.mailing {
+
+  padding: 6px;
+  background-image: url("../images/subscription-background.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mailing-wrapper {
+  padding: 26px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mailing-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.mailing-form {
+  display: flex;
+  gap: 14px;
+}
+
+.mailing-input {
+  width: 332px;
+  height: 47px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
 }

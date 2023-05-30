@@ -1027,6 +1027,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #2d3440;
 }
 
 .product-item-price {
@@ -1442,7 +1443,8 @@ body {
 .footer-info {
   width: 356px;
   display: flex;
-  column-gap: 24px;
+  column-gap: 28px;
+  margin-left: 282px;
 }
 
 .footer-info-list {
@@ -1450,7 +1452,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 8px 24px;
+  gap: 9px 24px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1462,8 +1464,39 @@ body {
   color: #2d3440;
 }
 
+.info-link-like {
+  font-size: 700;
+  position: relative;
+}
+
+.info-link-like::before {
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  content: "";
+  background-image: url("../images/like.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.footer-developer {
+  margin-left: 235px;
+}
+
 .footer-developer-text {
   padding: 0;
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
 
+.footer-link-delover {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.develover-text-link {
+  color: #2d3440;
+  text-underline-offset: 3px;
 }

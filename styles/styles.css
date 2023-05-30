@@ -813,19 +813,24 @@ body {
   justify-content: space-between;
 }
 
-.slider-social-link {
+.social-item {
+  width: 28px;
+  height: 28px;
+}
+
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 28px;
-  height: 28px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
   position: relative;
 }
 
-.slider-social-link::before {
+.social-link::before {
   content: "";
   width: 22px;
   height: 22px;
@@ -834,38 +839,27 @@ body {
   overflow: hidden;
 }
 
-.slider-social-vk::before {
-  background: url("../images/vk.svg") no-repeat center center;
-}
-
-.slider-social-tg::before {
+.social-tg::before {
   background: url("../images/telegram.svg") no-repeat center center;
 }
 
-.slider-social-yuotube::before {
+.social-vk::before {
+  background: url("../images/vk.svg") no-repeat center center;
+}
+
+.social-yuotube::before {
   background: url("../images/youtube.svg") no-repeat center center;
 }
 
-.slider-social-link:hover::before {
+.social-link:hover::before {
   background-color: #2d3440;
 }
 
-.slider-social-icon {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 24px;
-  height: 24px;
-}
-
-.slider-social-link:hover .slider-social-icon {
-  background-color: #2d3440;
-}
-
-.slider-social-link:active {
+.social-link:active {
   opacity: 0.5;
 }
 
-.slider-social-link:focus {
+.social-link:focus {
   background-color: #2d3440;
   border: 2px solid #2d3440;
 }
@@ -1425,10 +1419,9 @@ body {
 
 .page-footer {
   display: flex;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 48px;
-
+  align-items: flex-start;
+  padding-top: 47px;
+  padding-bottom: 45px;
 }
 
 .footer-social-block {
@@ -1440,4 +1433,37 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-info {
+  width: 356px;
+  display: flex;
+  column-gap: 24px;
+}
+
+.footer-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-info-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.footer-developer-text {
+  padding: 0;
+  margin: 0;
+
 }

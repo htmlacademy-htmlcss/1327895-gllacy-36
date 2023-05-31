@@ -13,31 +13,44 @@
   <body class="body-pink">
     <div class="container">
       <header class="main-header">
-        <a href="/index.html" class="logo-navigation">
+        <a class="logo-navigation">
           <img src="./images/logo.svg" alt="Логотип магазина Глейси." width="137" height="56">
         </a>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li class="main-navigation-item">
-              <a href="#" class="main-navigation-link">Каталог</a>
-              <div class="navigation-catalog">
-                <ul class="navigation-catalog-menu">
-                  <li class="navigation-catalog-item">
-                    <a href="#" class="navigation-catalog-link">Новинки</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a href="#" class="navigation-catalog-link">Сливочное</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a href="#" class="navigation-catalog-link">Щербеты</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a href="#" class="navigation-catalog-link">Фруктовый лед</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a href="#" class="navigation-catalog-link">Мелорин</a>
-                  </li>
-                </ul>
+            <li class="main-navigation-item popover-block">
+              <a href="./catalog.html" class="main-navigation-link dropdown-link  popover-link">Каталог</a>
+              <div class="navigation-catalog popover-window">
+                <div class="navigation-catalog-block">
+                  <ul class="navigation-catalog-menu">
+                    <li class="navigation-catalog-item new-item">
+                      <a href="#" class="navigation-catalog-link new-link">
+                        <span class="navigation-catalog-name">Новинки</span>
+                      </a>
+                    </li>
+                    <li class="navigation-catalog-item">
+                      <a href="#" class="navigation-catalog-link">
+                        <span class="navigation-catalog-name">Сливочное</span>
+                      </a>
+                    </li>
+                    <li class="navigation-catalog-item">
+                      <a href="#" class="navigation-catalog-link">
+                        <span class="navigation-catalog-name">Щербеты</span>
+                      </a>
+                    </li>
+                    <li class="navigation-catalog-item">
+                      <a href="#" class="navigation-catalog-link">
+                        <span class="navigation-catalog-name">Фруктовый лед</span>
+                      </a>
+                    </li>
+                    <li class="navigation-catalog-item">
+                      <a href="#" class="navigation-catalog-link">
+                        <span class="navigation-catalog-name">Мелорин</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
             </li>
             <li class="main-navigation-item">
@@ -48,81 +61,130 @@
             </li>
           </ul>
           <div class="other-navigation">
-            <a href="tel:+78005558628" class="header-link-phone">
-              <span class="header-phone-text">+7 800 555-86-28</span>
-            </a>
-            <div class="header-search">
-              <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
-                <label class="visually-hidden" for="search">Введите текст для поиска</label>
-                <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
-                  required>
-              </form>
-            </div>
-            <ul class="user-navigation">
-              <li class="user-navigation-item">
-                <a href="#" class="user-navigation-link">Вход</a>
-                <div class="personal-account">
-                  <p class="personal-account-title">Личный кабинет</p>
-                  <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
-                    <div class="personal-account-label">
-                      <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
-                      <input type="email" name="e-mail" id="mail" value="email@example.com" required>
+            <div class="header-help-block">
+              <div class="header-phone-block">
+                <a href="tel:+78005558628" class="header-link-phone">
+                  <span class="header-phone-text">+7 800 555-86-28</span>
+                </a>
+              </div>
+              <div class="header-search popover-block">
+                <a href="#" class="header-search-link popover-link">
+                  <span class="visually-hidden">Поиск</span>
+                  <span class="header-search-image">
+                    <svg class="header-search-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                      viewBox="0 0 14 14">
+                      <path fill-rule="evenodd"
+                        d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.238.672.672 0 0 0-.124.123 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div class="navigation-form-block">
+                  <form action="https://echo.htmlacademy.ru/" class="navigation-form popover-window" method="get">
+                    <div class="header-search-wrapper">
+                      <label class="visually-hidden" for="search">Введите текст для поиска</label>
+                      <input class="navigation-search" id="search" type="text" name="search"
+                        placeholder="Поиск по сайту" required>
+                      <button class="navigation-search-reset" type="reset">
+                        <span class="visually-hidden">Сброс поиска</span>
+                      </button>
                     </div>
-                    <div class="personal-account-label">
-                      <label for="password" class="visually-hidden">Введите ваш пароль</label>
-                      <input type="password" name="password" id="password" value="example" required>
-                    </div>
-                    <button class="personal-account-button" type="submit">
-                      <span class="button-text">Войти</span>
-                    </button>
-                    <ul class="personal-account-links">
-                      <li class="personal-account-item">
-                        <a href="#" class="password-link">Забыли пароль?</a>
-                      </li>
-                      <li class="personal-account-item">
-                        <a href="#" class="registration-link">Регистрация</a>
-                      </li>
-                    </ul>
                   </form>
                 </div>
+
+              </div>
+            </div>
+
+            <ul class="user-navigation">
+              <li class="user-navigation-item popover-block">
+                <a href="#" class="user-navigation-link popover-link entry-link">Вход</a>
+                <div class="personal-account-wrapper popover-window">
+                  <div class="personal-account">
+                    <p class="personal-account-title">Личный кабинет</p>
+                    <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
+                      <div class="personal-account-label">
+                        <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
+                        <input class="personal-account-input" type="email" name="e-mail" id="mail"
+                          value="email@example.com" required>
+                      </div>
+                      <div class="personal-account-label">
+                        <label for="password" class="visually-hidden">Введите ваш пароль</label>
+                        <input class="personal-account-input personal-account-password" type="password" name="password"
+                          id="password" value="exampl" required>
+                      </div>
+                      <div class="personal-account-entry">
+                        <button class="personal-account-button red-button" type="submit">
+                          <span class="button-text">Войти</span>
+                        </button>
+                        <ul class="personal-account-links">
+                          <li class="personal-account-item">
+                            <a href="#" class="password-link">Забыли пароль?</a>
+                          </li>
+                          <li class="personal-account-item">
+                            <a href="#" class="registration-link">Регистрация</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </li>
-              <li class="user-navigation-item">
-                <span class="visually-hidden">Корзина</span>
-                <a href="#" class="user-navigation-cart">
+              <li class="user-navigation-item popover-block">
+                <a href="#" class="user-navigation-link cart-link popover-link">
                   <span class="user-navigation-text">2 товара</span>
                 </a>
-                <div class="popover-cart">
-                  <div class="popover-cart-wrapper">
-                    <ul class="cart-list-products">
-                      <li class="cart-item-product">
-                        <span class="cart-image-wrapper">
-                          <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
-                            class="cart-image" width="46" height="46">
-                        </span>
-                        <div class="product-wrapper">
-                          <span class="cart-product-name">Малинка</span>
-                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                <div class="popover-cart-wrapper popover-window">
+                  <div class="popover-cart">
+                    <h2 class="popover-cart-title">Корзина</h2>
+                    <form action="https://echo.htmlacademy.ru/" class="popover-cart-form">
+                      <ul class="cart-list-products">
+                        <li class="cart-item-product">
+                          <a href="#" class="cart-product-link">
+                            <div class="cart-image-wrapper">
+                              <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
+                                class="cart-image" width="46" height="46">
+                            </div>
+                            <div class="product-wrapper">
+                              <span class="cart-product-name">Малинка</span>
+                              <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                            </div>
+                          </a>
+
+
+                          <b class="cart-product-price">310 ₽</b>
+                          <button class="cart-product-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                          <input type="hidden" name="cart-item" value="Малинка">
+                        </li>
+                        <li class="cart-item-product">
+                          <a href="#" class="cart-product-link">
+                            <div class="cart-image-wrapper">
+                              <img src="./images/products/product-cart-2.jpg"
+                                alt="Ванильный пломбир со сладкой посыпкой." class="cart-image" width="46" height="46">
+                            </div>
+                            <div class="product-wrapper">
+                              <span class="cart-product-name">Бабл-гам</span>
+                              <span class="cart-chosen-price">1,5 кг х 320 ₽</span>
+                            </div>
+                          </a>
+
+                          <b class="cart-product-price">480 ₽</b>
+                          <button class="cart-product-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                          <input type="hidden" name="cart-item" value="Бабл-гам">
+                        </li>
+                      </ul>
+                      <div class="cart-order">
+                        <button class="cart-order-submit red-button" type="submit">Оформить заказ</button>
+                        <div class="cart-order-text">
+                          <span class="cart-order-sum">Итого:</span>
+                          <span class="cart-order-price">790 ₽</span>
                         </div>
-                        <b class="cart-product-price">310 ₽</b>
-                        <button class="cart-product-delete" type="button">
-                          <span class="visually-hidden">Удалить из корзины</span>
-                        </button>
-                      </li>
-                      <li class="cart-item-product">
-                        <span class="cart-image-wrapper">
-                          <img src="./images/products/product-cart-2.jpg" alt="Ванильный пломбир со сладкой посыпкой."
-                            class="cart-image" width="46" height="46">
-                        </span>
-                        <div class="product-wrapper">
-                          <span class="cart-product-name">Бабл-гам</span>
-                          <span class="cart-chosen-price">1 кг х 310 ₽</span>
-                        </div>
-                        <b class="cart-product-price">310 ₽</b>
-                        <button class="cart-product-delete" type="button">
-                          <span class="visually-hidden">Удалить из корзины</span>
-                        </button>
-                      </li>
-                    </ul>
+
+                      </div>
+                    </form>
                   </div>
                 </div>
               </li>

@@ -113,7 +113,7 @@
                           id="password" value="exampl" required>
                       </div>
                       <div class="personal-account-entry">
-                        <button class="personal-account-button" type="submit">
+                        <button class="personal-account-button red-button" type="submit">
                           <span class="button-text">Войти</span>
                         </button>
                         <ul class="personal-account-links">
@@ -139,14 +139,18 @@
                     <form action="https://echo.htmlacademy.ru/" class="popover-cart-form">
                       <ul class="cart-list-products">
                         <li class="cart-item-product">
-                          <div class="cart-image-wrapper">
-                            <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
-                              class="cart-image" width="46" height="46">
-                          </div>
-                          <div class="product-wrapper">
-                            <span class="cart-product-name">Малинка</span>
-                            <span class="cart-chosen-price">1 кг х 310 ₽</span>
-                          </div>
+                          <a href="#" class="cart-product-link">
+                            <div class="cart-image-wrapper">
+                              <img src="./images/products/product-cart-1.jpg" alt="Мороженное с малиновым джемом."
+                                class="cart-image" width="46" height="46">
+                            </div>
+                            <div class="product-wrapper">
+                              <span class="cart-product-name">Малинка</span>
+                              <span class="cart-chosen-price">1 кг х 310 ₽</span>
+                            </div>
+                          </a>
+
+
                           <b class="cart-product-price">310 ₽</b>
                           <button class="cart-product-delete" type="button">
                             <span class="visually-hidden">Удалить из корзины</span>
@@ -154,14 +158,17 @@
                           <input type="hidden" name="cart-item" value="Малинка">
                         </li>
                         <li class="cart-item-product">
-                          <div class="cart-image-wrapper">
-                            <img src="./images/products/product-cart-2.jpg" alt="Ванильный пломбир со сладкой посыпкой."
-                              class="cart-image" width="46" height="46">
-                          </div>
-                          <div class="product-wrapper">
-                            <span class="cart-product-name">Бабл-гам</span>
-                            <span class="cart-chosen-price">1,5 кг х 320 ₽</span>
-                          </div>
+                          <a href="#" class="cart-product-link">
+                            <div class="cart-image-wrapper">
+                              <img src="./images/products/product-cart-2.jpg"
+                                alt="Ванильный пломбир со сладкой посыпкой." class="cart-image" width="46" height="46">
+                            </div>
+                            <div class="product-wrapper">
+                              <span class="cart-product-name">Бабл-гам</span>
+                              <span class="cart-chosen-price">1,5 кг х 320 ₽</span>
+                            </div>
+                          </a>
+
                           <b class="cart-product-price">480 ₽</b>
                           <button class="cart-product-delete" type="button">
                             <span class="visually-hidden">Удалить из корзины</span>
@@ -170,7 +177,7 @@
                         </li>
                       </ul>
                       <div class="cart-order">
-                        <button class="cart-order-submit" type="submit">Оформить заказ</button>
+                        <button class="cart-order-submit red-button" type="submit">Оформить заказ</button>
                         <div class="cart-order-text">
                           <span class="cart-order-sum">Итого:</span>
                           <span class="cart-order-price">790 ₽</span>
@@ -233,10 +240,23 @@
                 </li>
               </ul>
               <button class="slider-flip-button slider-button-prev" type="button">
+                <svg class="slider-flip-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+                  viewBox="0 0 7 12">
+                  <path fill-rule="evenodd"
+                    d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48a.665.665 0 0 0 .003-.943L1.135.865Z"
+                    clip-rule="evenodd" />
+                </svg>
+
                 <span class="visually-hidden">Показать предыдущий слайдер</span>
               </button>
               <button class="slider-flip-button slider-button-next" type="button">
-                <span class="visually-hidden">Показать предыдущий слайдер</span>
+                <svg class="slider-flip-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+                  viewBox="0 0 7 12">
+                  <path fill-rule="evenodd"
+                    d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48a.665.665 0 0 0 .003-.943L1.135.865Z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="visually-hidden">Показать следующий слайдер</span>
               </button>
             </div>
 
@@ -430,7 +450,7 @@
               <form class="mailing-form" action="https://echo.htmlacademy.ru/">
                 <label for="mailing-mail" class="visually-hidden">Введите вашу почту</label>
                 <input class="mailing-input" type="email" id="mailing-mail" placeholder="email@example.com" required>
-                <button class="mailing-button" type="submit">Отправить</button>
+                <button class="mailing-button red-button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
@@ -462,7 +482,7 @@
               <input id="delivery-address" type="text" class="delivery-input delivery-input-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
-            <button class="delivery-button" type="submit">Отправить</button>
+            <button class="delivery-button red-button" type="submit">Отправить</button>
           </form>
         </section>
         <section class="contacts">
@@ -473,7 +493,7 @@
             <p class="contacts-text">Для заказов по телефону:</p>
             <a href="tel:+78128121212" class="address-link-phone">+7 (812) 812-12-12</a>
             <span class="address-info">(с 10 до 20 ежедневно)</span>
-            <a href="#" class="address-feedback">Форма обратной связи</a>
+            <a href="#" class="address-feedback red-button">Форма обратной связи</a>
           </div>
 
         </section>

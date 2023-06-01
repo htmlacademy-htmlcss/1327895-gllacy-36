@@ -1576,3 +1576,138 @@ body {
   color: #2d3440;
   text-underline-offset: 3px;
 }
+
+/*Страница каталога */
+
+.main-catalog {
+  margin-top: 28px;
+
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 19px;
+}
+
+.breadcrumb-link {
+  color: #2d3440;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.breadcrumb-item {
+display: flex;
+align-items: center;
+margin-right: 9px;
+}
+
+.breadcrumb-item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumb-link-current {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb-item:not(:last-child):after {
+  content: "";
+  background-image: url("../images/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 9px;
+  margin-left: 10px;
+}
+
+.catalog-filter-heading {
+  text-align: left;
+}
+
+.catalog-filter-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.filter-group-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+
+}
+
+.filter-group-title {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.catalog-select {
+  width: 196px;
+  height: 36px;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  background-color:  rgba(252, 252, 252, 0.3);
+
+}
+
+.catalog-select:hover {
+background-color:  rgba(252, 252, 252, 0.5);
+}
+
+.catalog-select:focus {
+  outline: none;
+  border-color:  rgba(252, 252, 252, 1);
+}
+
+.filter-control {
+  width: 46px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+.range {
+  display: block;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  height: 36px;
+  width: 196px;
+
+
+}
+
+.filter-list {
+  height: 36px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 16px;
+  margin: 0;
+  padding: 8px 24px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+}
+
+.filter-button {
+  width: 185px;
+  height: 39px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 52px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}

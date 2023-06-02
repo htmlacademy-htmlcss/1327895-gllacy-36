@@ -1626,12 +1626,14 @@ margin-right: 9px;
 
 .catalog-filter-heading {
   text-align: left;
+  margin-bottom: 39px;
 }
 
 .catalog-filter-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  row-gap: 16px;
 }
 
 .filter-group-wrapper {
@@ -1644,6 +1646,7 @@ margin-right: 9px;
 .filter-group-title {
   padding: 0;
   margin: 0;
+  margin-bottom: 8px;
   margin-left: 16px;
   font-weight: 400;
   font-size: 14px;
@@ -1688,7 +1691,7 @@ background-color:  rgba(252, 252, 252, 0.5);
 }
 
 .filter-list {
-  height: 36px;
+
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -1698,6 +1701,14 @@ background-color:  rgba(252, 252, 252, 0.5);
   padding: 8px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
+}
+
+.radio-list {
+height: 36px;
+}
+
+.checkbox-list {
+  height: 39px;
 }
 
 .filter-button {
@@ -1710,4 +1721,13 @@ background-color:  rgba(252, 252, 252, 0.5);
   border: 2px solid #fcfcfc;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+.catalog-products-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 41px 30px;
 }

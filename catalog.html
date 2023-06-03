@@ -209,7 +209,7 @@
           <h2 class="catalog-filter-heading heading-block">Сливочное мороженое</h2>
           <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
             <div class="filter-group-wrapper">
-              <div class="filter-group">
+              <div class="filter-group filter-group-select">
                 <h3 class="filter-group-title">Сортировка:</h3>
                 <select class="catalog-select" name="sorting">
                   <option class="product-classification" value="popular" selected>по популярности</option>
@@ -217,7 +217,7 @@
                   <option class="product-classification" value=" feedback">сначала дешевые</option>
                 </select>
               </div>
-              <div class="filter-group">
+              <div class="filter-group filter-group-price">
                 <label for="filter-price" class="filter-group-title">Цена:</label>
                 <span class="visually-hidden">от</span>
                 <input id="filter-price" class="filter-control" name="min-price" placeholder="" value="100"
@@ -233,7 +233,7 @@
                 <span class="filter-control-text">₽</span>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 164px;">
+                    <div class="range-bar" style="left: 24px; width: 78px;">
                       <button class="range-button range-button-min" type="button">
                         <span class="visually-hidden">Начальная цена</span>
                       </button>
@@ -251,7 +251,7 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="percent-fat"
                         value="fat-free">
-                      <span class="filter-control-check"></span>
+                      <span class="filter-control-radio"></span>
                       <span class="filter-label">0%</span>
                     </label>
                   </li>
@@ -259,7 +259,7 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="percent-fat"
                         value="low-fat" checked>
-                      <span class="filter-control-check"></span>
+                      <span class="filter-control-radio"></span>
                       <span class="filter-label">до 10%</span>
                     </label>
                   </li>
@@ -267,7 +267,7 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="percent-fat"
                         value="medium-fat">
-                      <span class="filter-control-check"></span>
+                      <span class="filter-control-radio"></span>
                       <span class="filter-label">до 30%</span>
                     </label>
                   </li>
@@ -275,7 +275,7 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="percent-fat"
                         value="high-fat">
-                      <span class="filter-control-check"></span>
+                      <span class="filter-control-radio"></span>
                       <span class="filter-label">выше 30%</span>
                     </label>
                   </li>
@@ -283,7 +283,7 @@
               </div>
             </div>
             <div class="filter-group-wrapper">
-              <div class="filter-group">
+              <div class="filter-group filter-group-checkbox">
                 <h3 class="filter-group-title">Наполнители:</h3>
                 <ul class="filter-list checkbox-list">
                   <li class="filter-item">
@@ -609,31 +609,33 @@
               </div>
             </li>
           </ul>
-          <a class="button-more button" href="#">Загрузить ещё</a>
-          <div class="catalog-paganation">
-            <a class="paganation-button paganation-button-disabled button">
-              <span class="visually-hidden">Назад</span>
-            </a>
-            <ol class="paganation-list">
-              <li class="paganation-item">
-                <a href="#" class="paganation-link paganation-link-current">1</a>
-              </li>
-              <li class="paganation-item">
-                <a href="#" class="paganation-link">2</a>
-              </li>
-              <li class="paganation-item">
-                <a href="#" class="paganation-link">3</a>
-              </li>
-              <li class="paganation-item">
-                <a href="#" class="paganation-link">4</a>
-              </li>
-              <li class="paganation-item">
-                <a href="#" class="paganation-link">5</a>
-              </li>
-            </ol>
-            <a href="#" class="paganation-button button">
-              <span class="visually-hidden">Вперёд</span>
-            </a>
+          <div class="catalog-bottom">
+            <a class="button-more" href="#">Показать ещё</a>
+            <div class="catalog-paganation">
+              <a class="paganation-button paganation-button-disabled button">
+                <span class="visually-hidden">Назад</span>
+              </a>
+              <ol class="paganation-list">
+                <li class="paganation-item">
+                  <a href="#" class="paganation-link paganation-link-current">1</a>
+                </li>
+                <li class="paganation-item">
+                  <a href="#" class="paganation-link">2</a>
+                </li>
+                <li class="paganation-item">
+                  <a href="#" class="paganation-link">3</a>
+                </li>
+                <li class="paganation-item">
+                  <a href="#" class="paganation-link">4</a>
+                </li>
+                <li class="paganation-item">
+                  <a href="#" class="paganation-link">5</a>
+                </li>
+              </ol>
+              <a href="#" class="paganation-button button">
+                <span class="visually-hidden">Вперёд</span>
+              </a>
+            </div>
           </div>
 
 

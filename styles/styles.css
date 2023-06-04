@@ -1497,7 +1497,7 @@ border: 1px solid rgba(185, 185, 185, 1);
 border-bottom: transparent;
 border-right: transparent;
 top: 14px;
-left: 5px;
+left: -5px;
 transform: rotate(-45deg);
 
 }
@@ -1976,34 +1976,60 @@ height: 36px;
 
 /* ====================================== */
 
-.filter-control-mark {
+.filter-control-empty {
   display: inline-block;
   position: absolute;
   top: 2px;
   width: 16px;
   height: 16px;
   background-color: transparent;
-  border: 2px solid #2D3440;
+  border: 2px solid #2d3440;
   border-radius: 3px;
   box-sizing: border-box;
 }
 
- .filter-control [type="checkbox"]:checked + .filter-control-mark {
+.filter-control-mark {
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+ .filter-control [type="checkbox"]:checked ~ .filter-control-empty {
   display: none;
 }
 
-.filter-control [type="checkbox"]:checked + .filter-control-mark::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-image: url("../images/checkbox-default.svg");
-  background-repeat: no-repeat;
+.filter-control [type="checkbox"] ~ .filter-control-empty {
+  display: inline-block;
 }
 
-.filter-control [type="checkbox"]:hover +
-.filter-control-mark  {
+
+.filter-control [type="checkbox"] + .filter-control-mark {
+  display: none;
+}
+
+.filter-control [type="checkbox"]:checked + .filter-control-mark {
+  display: inline-block;
+}
+
+.filter-control [type="checkbox"]:hover ~
+.filter-control-empty  {
   border-color: #fcfcfc;
+}
+
+.filter-control [type="checkbox"]:hover ~
+.filter-control-mark  {
+  fill: #fcfcfc;
+}
+
+.filter-control [type="checkbox"]:disabled ~
+.filter-control-empty  {
+  border-color: rgba(45, 52, 64, 0.5);
+}
+
+.filter-control [type="checkbox"]:disabled ~
+.filter-control-mark  {
+  fill: rgba(45, 52, 64, 0.5);
 }
 
 .checkbox-list {

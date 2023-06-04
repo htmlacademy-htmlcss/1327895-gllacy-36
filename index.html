@@ -187,6 +187,11 @@
                     </form>
                   </div>
                 </div>
+                <div class="popover-cart-wrapper null-cart-wrapper popover-window">
+                  <div class="null-cart">
+                    <h2 class="null-cart-title">Ваша корзина пока пуста</h2>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -467,7 +472,11 @@
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <div class="delivery-form-block">
               <p class="delivery-group">
-                <label for="delivery-date" class="delivery-label">Дата</label>
+                <label for="delivery-date" class="delivery-label">
+                  <a class="tooltip-link">Дата
+                    <span class="tooltip-text  tooltip-date">Введите дату</span>
+                  </a>
+                </label>
                 <input type="text" class="delivery-input delivery-input-date" id="delivery-date"
                   placeholder="01.04.2020" required>
               </p>
@@ -478,7 +487,11 @@
               </p>
             </div>
             <p class="delivery-group delivery-address-group">
-              <label for="delivery-address" class="delivery-label">Адрес</label>
+              <label for="delivery-address" class="delivery-label">
+                <a class="tooltip-link">Адрес
+                  <span class="tooltip-text tooltip-address">Введите название улицы, дома и квартиры</span>
+                </a>
+              </label>
               <input id="delivery-address" type="text" class="delivery-input delivery-input-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>

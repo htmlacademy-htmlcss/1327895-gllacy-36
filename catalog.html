@@ -19,7 +19,14 @@
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-item popover-block">
-              <a href="./catalog.html" class="main-navigation-link dropdown-link  popover-link">Каталог</a>
+              <a href="./catalog.html" class="main-navigation-link dropdown-link  popover-link">Каталог
+                <svg class="main-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="6" fill="none"
+                  viewBox="0 0 12 6">
+                  <path fill-rule="evenodd"
+                    d="M1.808.195a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66A.667.667 0 0 0 10.2.195L6.003 4.39 1.808.195Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
               <div class="navigation-catalog popover-window">
                 <div class="navigation-catalog-block">
                   <ul class="navigation-catalog-menu">
@@ -29,7 +36,7 @@
                       </a>
                     </li>
                     <li class="navigation-catalog-item">
-                      <a href="#" class="navigation-catalog-link">
+                      <a class="navigation-catalog-link catalog-link-current">
                         <span class="navigation-catalog-name">Сливочное</span>
                       </a>
                     </li>
@@ -71,7 +78,7 @@
                 <a href="#" class="header-search-link popover-link">
                   <span class="visually-hidden">Поиск</span>
                   <span class="header-search-image">
-                    <svg class="header-search-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    <svg class="header-search-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                       viewBox="0 0 14 14">
                       <path fill-rule="evenodd"
                         d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.238.672.672 0 0 0-.124.123 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
@@ -97,7 +104,15 @@
 
             <ul class="user-navigation">
               <li class="user-navigation-item popover-block">
-                <a href="#" class="user-navigation-link popover-link entry-link">Вход</a>
+                <a href="#" class="user-navigation-link popover-link entry-link">
+                  <span>Вход</span>
+                  <svg class="personal-account-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                    fill="none" viewBox="0 0 14 15">
+                    <path fill-rule="evenodd"
+                      d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.475l-3.33 3.33a.667.667 0 1 1-.942-.944l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
                 <div class="personal-account-wrapper popover-window">
                   <div class="personal-account">
                     <p class="personal-account-title">Личный кабинет</p>
@@ -115,6 +130,7 @@
                       <div class="personal-account-entry">
                         <button class="personal-account-button red-button" type="submit">
                           <span class="button-text">Войти</span>
+
                         </button>
                         <ul class="personal-account-links">
                           <li class="personal-account-item">
@@ -131,6 +147,13 @@
               </li>
               <li class="user-navigation-item popover-block">
                 <a href="#" class="user-navigation-link cart-link popover-link">
+                  <svg class="cart-link-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
+                    viewBox="0 0 15 14">
+                    <path fill-rule="evenodd"
+                      d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
+                      clip-rule="evenodd" />
+                  </svg>
+
                   <span class="user-navigation-text">2 товара</span>
                 </a>
                 <div class="popover-cart-wrapper popover-window">
@@ -611,8 +634,14 @@
           <div class="catalog-bottom">
             <a class="button-more white-button" href="#">Показать ещё</a>
             <div class="catalog-paganation">
-              <a class="paganation-button paganation-button-disabled button">
+              <a class="paganation-button paganation-button-disabled">
                 <span class="visually-hidden">Назад</span>
+                <svg class="paganation-icon-prev" xmlns="http://www.w3.org/2000/svg" width="12" height="6" fill="none"
+                  viewBox="0 0 12 6">
+                  <path fill-rule="evenodd"
+                    d="M1.808.195a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66A.667.667 0 0 0 10.2.195L6.003 4.39 1.808.195Z"
+                    clip-rule="evenodd" />
+                </svg>
               </a>
               <ol class="paganation-list">
                 <li class="paganation-item">
@@ -633,6 +662,12 @@
               </ol>
               <a href="#" class="paganation-button button">
                 <span class="visually-hidden">Вперёд</span>
+                <svg class="paganation-icon-next" xmlns="http://www.w3.org/2000/svg" width="12" height="6" fill="none"
+                  viewBox="0 0 12 6">
+                  <path fill-rule="evenodd"
+                    d="M1.808.195a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66A.667.667 0 0 0 10.2.195L6.003 4.39 1.808.195Z"
+                    clip-rule="evenodd" />
+                </svg>
               </a>
             </div>
           </div>

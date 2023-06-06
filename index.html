@@ -90,7 +90,7 @@
                   <form action="https://echo.htmlacademy.ru/" class="navigation-form popover-window" method="get">
                     <div class="header-search-wrapper">
                       <label class="visually-hidden" for="search">Введите текст для поиска</label>
-                      <input class="navigation-search" id="search" type="text" name="search"
+                      <input class="navigation-search input-enter" id="search" type="text" name="search"
                         placeholder="Поиск по сайту" required>
                       <button class="navigation-search-reset" type="reset">
                         <span class="visually-hidden">Сброс поиска</span>
@@ -119,13 +119,13 @@
                     <form action="https://echo.htmlacademy.ru/" class="personal-account-form">
                       <div class="personal-account-label">
                         <label for="mail" class="visually-hidden">Введите ваш e-mail</label>
-                        <input class="personal-account-input" type="email" name="e-mail" id="mail"
+                        <input class="personal-account-input input-enter" type="email" name="e-mail" id="mail"
                           value="email@example.com" required>
                       </div>
                       <div class="personal-account-label">
                         <label for="password" class="visually-hidden">Введите ваш пароль</label>
-                        <input class="personal-account-input personal-account-password" type="password" name="password"
-                          id="password" value="exampl" required>
+                        <input class="personal-account-input personal-account-password input-enter" type="password"
+                          name="password" id="password" value="exampl" required>
                       </div>
                       <div class="personal-account-entry">
                         <button class="personal-account-button red-button" type="submit">
@@ -446,16 +446,18 @@
             <p class="about-heading heading-block">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
               собственного
               производства на развес</p>
-            <ul class="about-list">
-              <li class="about-item">Всё наше мороженое изготавливается на собственном производстве с использованием
-                современного оборудования и проверенных временем технологий.</li>
-              <li class="about-item">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с
-                которыми<br>нас связывает долговременное сотрудничество.</li>
-              <li class="about-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все
-                ингредиенты<br>и добавки произведены из натурального сырья.</li>
-              <li class="about-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт
-                мороженому растаять и позволяет сохранить превосходный вкус.</li>
-            </ul>
+            <p class="about-text about-text-technology">Всё наше мороженое изготавливается на собственном производстве с
+              использованием
+              современного оборудования и проверенных временем технологий.</p>
+            <p class="about-text about-text-raw">Закупка ингредиентов производится только<br>у проверенных фермерских
+              хозяйств, с
+              которыми<br>нас связывает долговременное сотрудничество.</p>
+            <p class="about-text about-text-quality">Для приготовления мороженого используются сливки и молоко
+              высочайшего качества. Все
+              ингредиенты<br>и добавки произведены из натурального сырья.</p>
+            <p class="about-text about-text-delivery">Доставка нашего мороженого осуществляется в специальном термопаке,
+              который не даёт
+              мороженому растаять и позволяет сохранить превосходный вкус.</p>
           </div>
         </section>
         <div class="news-block">
@@ -472,8 +474,11 @@
                 что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="mailing-form" action="https://echo.htmlacademy.ru/">
                 <label for="mailing-mail" class="visually-hidden">Введите вашу почту</label>
-                <input class="mailing-input" type="email" id="mailing-mail" placeholder="email@example.com" required>
-                <button class="mailing-button red-button" type="submit">Отправить</button>
+                <input class="mailing-input input-enter" type="email" id="mailing-mail" placeholder="email@example.com"
+                  required>
+                <button class="mailing-button red-button" type="submit">
+                  <span class="button-text">Отправить</span>
+                </button>
               </form>
             </div>
           </section>
@@ -495,12 +500,12 @@
                     <span class="tooltip-text  tooltip-date">Введите дату</span>
                   </a>
                 </label>
-                <input type="text" class="delivery-input delivery-input-date" id="delivery-date"
+                <input type="text" class="delivery-input delivery-input-date input-enter" id="delivery-date"
                   placeholder="01.04.2020" required>
               </p>
               <p class="delivery-group">
                 <label for="delivery-phone" class="delivery-label">Телефон</label>
-                <input id="delivery-phone" type="text" class="delivery-input delivery-input-phone"
+                <input id="delivery-phone" type="text" class="delivery-input delivery-input-phone input-enter"
                   placeholder="+7 800 999-00-00" required>
               </p>
             </div>
@@ -510,7 +515,7 @@
                   <span class="tooltip-text tooltip-address">Введите название улицы, дома и квартиры</span>
                 </a>
               </label>
-              <input id="delivery-address" type="text" class="delivery-input delivery-input-address"
+              <input id="delivery-address" type="text" class="delivery-input input-enter"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="delivery-button red-button" type="submit">Отправить</button>
@@ -601,12 +606,14 @@
           <p class="modal-title">Мы обязательно ответим вам!</p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
             <label for="name" class="visually-hidden">Введите ваше имя:</label>
-            <input class="modal-input" type="text" id="name" placeholder="Имя и фамилия" name="name" required>
+            <input class="modal-input input-enter" type="text" id="name" placeholder="Имя и фамилия" name="name"
+              required>
             <label for="e-mail" class="visually-hidden">Введите ваш e-mail</label>
-            <input class="modal-input" type="email" id="e-mail" placeholder="email@example.com" name="name" required>
+            <input class="modal-input input-enter" type="email" id="e-mail" placeholder="email@example.com" name="name"
+              required>
             <label for="name" class="visually-hidden">Введите текст</label>
-            <textarea class="modal-input modal-input-text" id="name" placeholder="В свободной форме" name="modal-text"
-              cols="30" rows="10" required></textarea>
+            <textarea class="modal-input input-enter modal-input-text" id="name" placeholder="В свободной форме"
+              name="modal-text" cols="30" rows="10" required></textarea>
             <button class="modal-button-submit red-button" type="submit">Отправить </button>
           </form>
         </section>

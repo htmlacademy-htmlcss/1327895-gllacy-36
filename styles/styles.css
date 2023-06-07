@@ -74,6 +74,17 @@ body {
   outline: 2px solid #2d3440;
 }
 
+.red-button-disabled,
+.red-button-disabled:hover,
+.red-button-disabled:active,
+.red-button-disabled:focus {
+  background: #B9B9B9;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  cursor: default;
+  color: #565c66;
+  font-weight: 400;
+}
+
 .white-button {
   display: block;
   text-align: center;
@@ -104,6 +115,46 @@ body {
   outline: 2px solid #2d3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
+
+.white-button-disabled,
+.white-button-disabled:hover,
+.white-button-disabled:active,
+.white-button-disabled:focus {
+  color: #b9b9b9;
+
+}
+
+/* Кнопка со спинером */
+
+.button-expectation {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 39px;
+}
+
+.button-expectation::after {
+  content: "";
+  background-image: url("../images/spinner-black.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.button-expectation::after {
+  content: "";
+  background-image: url("../images/spinner-white.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+
+/* =================================== */
 
 .input-enter {
   display: inline-block;

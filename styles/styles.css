@@ -277,16 +277,25 @@ body {
   color: #fcfcfc;
 }
 
-.main-navigation-link:hover .main-navigation-icon {
-  fill: #fcfcfc;
-  transform: rotate(180deg);
-}
-
 .popover-link:hover,
 .popover-link:active,
 .popover-link:focus {
   background-color: #ff4a78;
   color: #fcfcfc;
+}
+
+/* Изменения состояния цвета ссылок при открытом поповере в header */
+
+.popover-link-active:hover {
+  opacity: 0.6;
+}
+
+.popover-link-active:active {
+  opacity: 0.3;
+}
+
+.popover-link-active:focus {
+  border-color:#000000;
 }
 
 .navigation-catalog-name {
@@ -723,21 +732,29 @@ body {
 }
 
 .popover-block:focus-within .popover-link {
-  background-color: red;
+  background-color: #ff4a78;
   color: #fcfcfc;
 }
 
-.popover-block:focus-within svg {
+.popover-block:focus-within .svg {
   fill: #fcfcfc;
 }
 
+.popover-block:focus-within .main-navigation-icon {
+  transform: rotate(180deg);
+}
+
 .popover-block:hover .popover-link {
-  background-color: red;
+  background-color: #ff4a78;
   color: #fcfcfc;
 }
 
 .popover-block:hover svg {
   fill: #fcfcfc;
+}
+
+.popover-block:hover .main-navigation-icon {
+  transform: rotate(180deg);
 }
 
 /*Блок Hero  */
@@ -922,9 +939,12 @@ body {
 
 .slider-paganation-button {
   display: block;
-  border: none;
+  padding: 0;
+  margin: 0;
+  border: 2px solid transparent;
   width: 12px;
   height: 12px;
+  box-sizing: border-box;
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
 }
@@ -932,6 +952,20 @@ body {
 .slider-paganation-current {
   background-color: #fcfcfc;
 }
+
+.slider-paganation-button:hover {
+  border-color: #fcfcfc;
+}
+
+.slider-paganation-button:active {
+  border-color: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-paganation-button:focus {
+  border-color: #2d3440;
+}
+
 
 .slider-socials {
   list-style: none;
@@ -1812,6 +1846,7 @@ body {
 }
 
 .filter-control-text {
+  color:  #2d3440;
   font-size: 14px;
   margin-left: -4px;
 }

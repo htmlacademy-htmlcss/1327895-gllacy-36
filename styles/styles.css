@@ -787,7 +787,7 @@ body {
   color: #fcfcfc;
 }
 
-.popover-block:focus-within .svg {
+.popover-block:focus-within svg {
   fill: #fcfcfc;
 }
 
@@ -1457,6 +1457,10 @@ body {
 
 .mailing-input {
   width: 332px;
+}
+
+.mailing-input:invalid:not(:placeholder-shown) {
+  border:  1px solid #ea5454;
 }
 
 .mailing-button {

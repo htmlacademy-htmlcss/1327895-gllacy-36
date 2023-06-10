@@ -121,7 +121,6 @@ body {
 .white-button-disabled:active,
 .white-button-disabled:focus {
   color: #b9b9b9;
-
 }
 
 /* Кнопка со спинером */
@@ -151,8 +150,20 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 8px;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* =================================== */
 
@@ -166,15 +177,45 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color:  #2d3440;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   outline: none;
 }
 
-.input-enter:hover,
-.input-enter:hover,
+.mailing-input:hover {
+  border:  1px solid #2d3440;
+}
+
 .input-enter:focus {
-  border-color: #2d3440;
+  border: 1px solid #2d3440;
+  outline:  1px solid #2d3440;
+}
+
+.input-enter::placeholder {
+  color:  #b9b9b9;
+}
+
+.input-enter:invalid:not(:placeholder-shown) {
+  border:  1px solid #ea5454;
+}
+
+.input-enter:invalid:not(:placeholder-shown):hover,
+.input-enter:invalid:not(:placeholder-shown):focus {
+  outline:  1px solid #ea5454;
+}
+
+.input-enter:disabled {
+  background-color: #e7e7e7;
+  color: rgba(45, 52, 64, 0.65);
+}
+
+.input-enter:disabled:hover {
+  border-color: #b9b9b9;
+}
+
+.input-enter:disabled:hover::placeholder {
+  color: rgba(45, 52, 64, 1);
 }
 
 .container {
@@ -728,6 +769,7 @@ body {
 }
 
 .cart-product-delete {
+  position: relative;
   display: inline-block;
   border: none;
   width: 10px;
@@ -735,7 +777,27 @@ body {
   background-image: url("../images/exit.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  outline: none;
   cursor: pointer;
+}
+
+.cart-product-delete:hover {
+  opacity: 0.6;
+}
+.cart-product-delete:active {
+  opacity: 0.9;
+}
+
+.cart-product-delete:focus::after {
+  position: absolute;
+  content:"";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2d3440;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-23%, -23%);
 }
 
 .cart-order {
@@ -1071,8 +1133,8 @@ body {
 
 .social-link::before {
   content: "";
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   display: block;
   border-radius: 50%;
   overflow: hidden;
@@ -1459,10 +1521,6 @@ body {
   width: 332px;
 }
 
-.mailing-input:invalid:not(:placeholder-shown) {
-  border:  1px solid #ea5454;
-}
-
 .mailing-button {
   display: inline-block;
   padding: 11px 35px;
@@ -1735,6 +1793,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: #2d3440;
+  outline: none;
 }
 
 .info-link-like {
@@ -1802,6 +1861,14 @@ body {
   text-underline-offset: 3px;
 }
 
+.develover-text-link:hover,
+.develover-text-link:focus {
+  opacity: 0.6;
+}
+
+.develover-text-link:active {
+  opacity: 0.3;
+}
 /*Страница каталога */
 
 .main-catalog {
@@ -2071,6 +2138,13 @@ body {
 .filter-control [type="radio"]:checked:hover + .filter-control-radio::before {
   background-color: #fcfcfc;
 }
+
+.filter-control-input:focus ~ .filter-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
 
 /* состояние радиокнопок проверить при disabled */
 

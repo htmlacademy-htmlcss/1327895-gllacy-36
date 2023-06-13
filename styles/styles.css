@@ -276,6 +276,11 @@ body {
   opacity: 0.3;
 }
 
+.logo-current:hover,
+.logo-current:active {
+  opacity: 1;
+}
+
 .main-navigation {
   display: flex;
   width: 100%;

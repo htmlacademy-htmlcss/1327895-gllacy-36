@@ -134,10 +134,10 @@
                         </button>
                         <ul class="personal-account-links">
                           <li class="personal-account-item">
-                            <a href="#" class="password-link">Забыли пароль?</a>
+                            <a href="#" class="personal-link password-link ">Забыли пароль?</a>
                           </li>
                           <li class="personal-account-item">
-                            <a href="#" class="registration-link">Регистрация</a>
+                            <a href="#" class="registration-link personal-link">Регистрация</a>
                           </li>
                         </ul>
                       </div>
@@ -352,10 +352,10 @@
           <ul class="popular-products-list">
             <li class="product-item">
               <a href="#" class="product-item-link">
-                <div class="product-image-wrapper">
-                  <img src="./images/products/product-1.jpg" alt="Мороженное с малиновым джемом."
-                    class="product-item-image" width="168" height="168">
-                </div>
+
+                <img src="./images/products/product-1.jpg" alt="Мороженное с малиновым джемом."
+                  class="product-item-image" width="168" height="168">
+
                 <h3 class="product-item-title">Малинка</h3>
               </a>
               <span class="product-item-text">Сливочное мороженое с малиновым джемом</span>
@@ -374,10 +374,8 @@
             </li>
             <li class="product-item">
               <a href="#" class="product-item-link">
-                <div class="product-image-wrapper">
-                  <img src="./images/products/product-2.jpg" alt="Фисташковый пломбир с кусочками шоколада."
-                    class="product-item-image" width="168" height="168">
-                </div>
+                <img src="./images/products/product-2.jpg" alt="Фисташковый пломбир с кусочками шоколада."
+                  class="product-item-image" width="168" height="168">
                 <h3 class="product-item-title">Фисташка</h3>
               </a>
               <span class="product-item-text">Фисташковый пломбир с кусочками шоколада</span>
@@ -396,10 +394,8 @@
             </li>
             <li class="product-item">
               <a href="#" class="product-item-link">
-                <div class="product-image-wrapper">
-                  <img src="./images/products/product-3.jpg" alt="Крем-брюле с черничным джемом."
-                    class="product-item-image" width="168" height="168">
-                </div>
+                <img src="./images/products/product-3.jpg" alt="Крем-брюле с черничным джемом."
+                  class="product-item-image" width="168" height="168">
 
                 <h3 class="product-item-title">Черника</h3>
               </a>
@@ -419,10 +415,10 @@
             </li>
             <li class="product-item">
               <a href="#" class="product-item-link">
-                <div class="product-image-wrapper">
-                  <img src="./images/products/product-4.jpg" alt="Ванильный пломбир со сладкой посыпкой."
-                    class="product-item-image" width="168" height="168">
-                </div>
+
+                <img src="./images/products/product-4.jpg" alt="Ванильный пломбир со сладкой посыпкой."
+                  class="product-item-image" width="168" height="168">
+
                 <h3 class="product-item-title">Бабл-гам</h3>
               </a>
               <span class="product-item-text">Ванильный пломбир<br>со сладкой посыпкой</span>
@@ -464,7 +460,7 @@
         <div class="news-block">
           <section class="new">
             <h2 class="visually-hidden">Статьи</h2>
-            <a href="#" class="new-link-blog">Новое в нашем блоге</a>
+            <p class="new-title-blog">Новое в нашем блоге</p>
             <a href="#" class="new-link-article">10 способов сервировки фруктовых щербетов<br>к столу</a>
           </section>
           <section class="mailing">
@@ -507,7 +503,7 @@
               <p class="delivery-group">
                 <label for="delivery-phone" class="delivery-label">Телефон</label>
                 <input id="delivery-phone" type="text" class="delivery-input delivery-input-phone input-enter"
-                  placeholder="+7 800 999-00-00" required>
+                  pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="+7 800 999-00-00" required>
               </p>
             </div>
             <p class="delivery-group delivery-address-group">

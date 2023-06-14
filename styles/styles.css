@@ -101,7 +101,7 @@ body {
 }
 
 .white-button:hover {
-  background: rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #fcfcfc;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .white-button:focus {
-  background-color: #fcfcfc;
+  background-color:rgba(252, 252, 252, 0.4);
   outline: 2px solid #2d3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
@@ -191,6 +191,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color:  #2d3440;
+  background-color: #ffffff;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   outline: none;
@@ -546,8 +547,8 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 16px;
-  right: 16px;
+  top: 54px;
+  right: 33px;
   border: none;
   width: 10px;
   height: 10px;
@@ -955,6 +956,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 47px;
+  color: #2d3440;
 }
 
 .slider-button {
@@ -1225,6 +1227,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -1239,13 +1242,13 @@ body {
 .stocks-raspberry {
   background-image: url("../images/rasberry-banner.png");
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: bottom 0 right 0;
 }
 
 .stocks-marshmallow {
   background-image: url("../images/marshmallow-banner.png");
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: bottom 0 right 0;
 }
 
 .stocks-text-blok {
@@ -1995,7 +1998,7 @@ body {
 
 .filter-group-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .filter-group-select,
@@ -2151,17 +2154,17 @@ body {
 .filter-list {
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   column-gap: 17px;
   margin: 0;
-  padding: 8px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
 }
 
 .radio-list {
-  height: 36px;
+  padding: 8px 24px;
 }
 
 .filter-control {
@@ -2270,7 +2273,7 @@ body {
 }
 
 .checkbox-list {
-  height: 39px;
+  padding: 10px 24px;
 }
 
 .filter-button {
@@ -2278,12 +2281,13 @@ body {
   min-width: 188px;
   font-weight: 700;
   font-size: 14px;
-  padding: 9px 52px;
+  padding: 10px 52px;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   box-sizing: border-box;
   border-radius: 20px;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .filter-button:hover {

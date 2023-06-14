@@ -46,6 +46,8 @@ body {
   background-color: #fcc850;
 }
 
+/* Общие стили для кнопок */
+
 .red-button {
   background-color: #ff2f64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
@@ -64,25 +66,25 @@ body {
   color: #2d3440;
 }
 
+.red-button:focus {
+  background-color: #ff2f64;
+  outline: 2px solid #2d3440;
+}
+
 .red-button:active {
   background-color: #feafc3;
   outline: 2px solid #2d3440;
   color: #fcfcfc;
 }
 
-.red-button:focus {
-  background-color: #ff2f64;
-  outline: 2px solid #2d3440;
-}
-
 .red-button-disabled,
 .red-button-disabled:hover,
-.red-button-disabled:active,
-.red-button-disabled:focus {
+.red-button-disabled:focus,
+.red-button-disabled:active {
   background: #b9b9b9;
   outline: 4px solid rgba(185, 185, 185, 0.3);
   cursor: default;
-  color: #565c66;
+  color: rgba(86, 92, 102, 0.4);
   font-weight: 400;
 }
 
@@ -105,14 +107,14 @@ body {
   outline: 4px solid #fcfcfc;
 }
 
-.white-button:active {
-  background-color: #fcfcfc;
+.white-button:focus {
+  background-color:rgba(252, 252, 252, 0.4);
   outline: 2px solid #2d3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
-.white-button:focus {
-  background-color:rgba(252, 252, 252, 0.4);
+.white-button:active {
+  background-color: #fcfcfc;
   outline: 2px solid #2d3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
@@ -121,6 +123,10 @@ body {
 .white-button-disabled:hover,
 .white-button-disabled:active,
 .white-button-disabled:focus {
+  background: #e7e7e7;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  cursor: default;
+  font-weight: 400;
   color: #b9b9b9;
 }
 
@@ -178,7 +184,7 @@ body {
   }
 }
 
-/* =================================== */
+/* Общие стили для полей ввода текста  */
 
 .input-enter {
   display: inline-block;
@@ -208,6 +214,8 @@ body {
 
 .input-enter::placeholder {
   color:  #b9b9b9;
+  opacity: 1;
+
 }
 
 .input-enter:invalid:not(:placeholder-shown) {
@@ -230,13 +238,17 @@ body {
 
 .input-enter:disabled:hover::placeholder {
   color: #2d3440;
+  opacity: 1;
 }
+
+/* ======================================== */
 
 .container {
   display: flex;
   flex-direction: column;
   width: 1170px;
   min-height: 100vh;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -559,6 +571,23 @@ body {
   display: none;
 }
 
+.navigation-search-reset:hover {
+  opacity: 0.6;
+}
+
+.navigation-search-reset:focus {
+  outline: none;
+}
+.navigation-search-reset:focus::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  top: -3px;
+  left: -3px;
+  border: 2px solid #2d3440;
+}
+
 .navigation-search:not(:placeholder-shown) + .navigation-search-reset {
   display: block;
 }
@@ -647,7 +676,6 @@ body {
 }
 
 .personal-account-input {
-
   width: 324px;
 }
 
@@ -1233,10 +1261,11 @@ body {
 
 .stocks-item {
   width: 570px;
-  padding: 37px 36px 36px;
+  padding: 37px 220px 36px 36px;
   box-sizing: border-box;
   background-color: #ff7799;
   border-radius: 16px;
+  color: #2d3440;
 }
 
 .stocks-raspberry {
@@ -1249,11 +1278,6 @@ body {
   background-image: url("../images/marshmallow-banner.png");
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
-}
-
-.stocks-text-blok {
-  width: 304px;
-  color: #2d3440
 }
 
 .stocks-title {
@@ -2157,7 +2181,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  column-gap: 17px;
+  gap: 7px 17px;
   margin: 0;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
